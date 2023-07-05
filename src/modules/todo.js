@@ -56,9 +56,9 @@ const todoReducer = (state = initialState, action) => {
       console.log(id, todo);
 
       return state.map((item) => {
-        console.log("item.id: ", item.id, "id: ", id, item.id === id);
+        //console.log("item.id: ", item.id, "id: ", id, item.id === id);
         if (item.id === id) {
-          console.log("들어옴");
+          //console.log("들어옴");
           return { ...item, name: todo.name, desc: todo.desc };
         }
         return item;
